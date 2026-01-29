@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Saya - Portofolio Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold gradient-text uppercase tracking-wider">Nama Anda</span>
+            <div class="space-x-6 hidden md:block">
+                <a href="#tentang" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#pengalaman" class="hover:text-blue-600 transition">Pengalaman</a>
+                <a href="#keahlian" class="hover:text-blue-600 transition">Keahlian</a>
+                <a href="#kontak" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=500" alt="Foto Profil" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Halo, Saya <span class="gradient-text">Nama Lengkap</span></h1>
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+                    Seorang Software Developer yang berdedikasi untuk membangun solusi digital yang elegan dan fungsional. Berpengalaman dalam pengembangan web modern dan desain antarmuka.
+                </p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Tentang Saya</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-start text-lg text-gray-600 leading-relaxed">
+                <p>
+                    Saya adalah lulusan Teknik Informatika dengan semangat tinggi dalam mempelajari teknologi terbaru. Saya percaya bahwa kode yang baik bukan hanya yang berfungsi, tetapi juga yang mudah dibaca dan dipelihara.
+                </p>
+                <p>
+                    Diluar pekerjaan, saya aktif berkontribusi dalam komunitas open-source dan senang berbagi pengetahuan melalui blog teknis. Saya selalu mencari tantangan baru untuk mengasah kemampuan saya.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="pengalaman" class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">Pengalaman Kerja</h2>
+            <div class="space-y-8">
+                <!-- Item 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-blue-600 transition hover:shadow-md">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold">Senior Web Developer</h3>
+                        <span class="text-blue-600 font-medium">Januari 2022 — Sekarang</span>
+                    </div>
+                    <p class="text-gray-500 mb-4 italic">PT. Teknologi Kreatif Bangsa</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Memimpin tim frontend untuk membangun dashboard analitik skala besar.</li>
+                        <li>Meningkatkan performa loading aplikasi hingga 40%.</li>
+                        <li>Mengintegrasikan REST API dan sistem autentikasi keamanan tinggi.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-gray-300 transition hover:shadow-md">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold">Junior Programmer</h3>
+                        <span class="text-gray-500 font-medium">Juni 2019 — Desember 2021</span>
+                    </div>
+                    <p class="text-gray-500 mb-4 italic">Startup Digital Utama</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Membangun fitur-fitur baru menggunakan JavaScript dan React.</li>
+                        <li>Bekerja sama dengan UI/UX designer untuk implementasi desain yang presisi.</li>
+                        <li>Melakukan bug fixing dan pemeliharaan rutin pada server.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="keahlian" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Keahlian Teknis</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+                    <p class="font-semibold">HTML5 & CSS3</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fab fa-js text-4xl text-yellow-500 mb-3"></i>
+                    <p class="font-semibold">JavaScript</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fab fa-react text-4xl text-blue-400 mb-3"></i>
+                    <p class="font-semibold">React.js</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fab fa-node-js text-4xl text-green-500 mb-3"></i>
+                    <p class="font-semibold">Node.js</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fab fa-python text-4xl text-blue-600 mb-3"></i>
+                    <p class="font-semibold">Python</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fas fa-database text-4xl text-indigo-500 mb-3"></i>
+                    <p class="font-semibold">PostgreSQL</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fab fa-git-alt text-4xl text-red-500 mb-3"></i>
+                    <p class="font-semibold">Git Control</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center hover:bg-blue-50 transition">
+                    <i class="fab fa-docker text-4xl text-blue-500 mb-3"></i>
+                    <p class="font-semibold">Docker</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Mari Berdiskusi</h2>
+            <p class="text-xl mb-12 opacity-90">Tertarik untuk bekerja sama atau sekadar ingin menyapa? Hubungi saya kapan saja.</p>
+            <div class="inline-flex flex-col md:flex-row items-center gap-6">
+                <a href="mailto:email@anda.com" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
+                    Kirim Email Sekarang
+                </a>
+                <p class="text-lg">atau cari saya di media sosial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        <p>© 2024 Nama Anda. Dibuat dengan ❤️ dan Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
