@@ -39,6 +39,26 @@
   appId: "1:563728400620:web:cdebe0585aeef99f3da5c9",
   measurementId: "G-G6VFSFD8RW"
 };
+        // Inisialisasi Firebase
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
+// Fungsi saat tombol daftar diklik
+function simpanData(nama, alamat, pekerjaan, email) {
+    const pesertaRef = database.ref('peserta');
+    const pesertaBaru = pesertaRef.push(); // Membuat ID unik otomatis
+    
+    pesertaBaru.set({
+        nama_lengkap: nama,
+        alamat: alamat,
+        pekerjaan: pekerjaan,
+        email: email,
+        waktu_daftar: new Date().toISOString()
+    }).then(() => {
+        alert("Data tersimpan! Selamat belajar.");
+        window.location.href = "dashboard.html";
+    });
+}
     </script>
 </body>
 </html>
