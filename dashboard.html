@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Materi - KELAS BISINDO CIANJUR</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background: #e9ecef; }
+        header { background: #2c3e50; color: white; padding: 15px; text-align: center; }
+        .container { padding: 20px; }
+        .section-title { background: #fff; padding: 10px; border-radius: 5px; margin: 20px 0; border-left: 5px solid #27ae60; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 10px; }
+        .item { background: white; padding: 15px; text-align: center; border-radius: 5px; text-decoration: none; color: #333; font-weight: bold; border: 1px solid #ddd; transition: 0.3s; }
+        .item:hover { background: #27ae60; color: white; }
+    </style>
+</head>
+<body>
+    <header><h1>KELAS BISINDO CIANJUR</h1></header>
+    
+    <div class="container">
+        <div class="section-title"><h3>Kolom Abjad (26 Huruf)</h3></div>
+        <div class="grid-container" id="abjad">
+            <script>
+                const abjad = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+                abjad.forEach(h => {
+                    document.write(`<a href="https://youtube.com/results?search_query=bisindo+huruf+${h}" class="item" target="_blank">${h}</a>`);
+                });
+            </script>
+        </div>
+
+        <div class="section-title"><h3>Kolom Angka (1 - 30)</h3></div>
+        <div class="grid-container">
+            <script>
+                for(let i=1; i<=30; i++) {
+                    document.write(`<a href="https://youtube.com/results?search_query=bisindo+angka+${i}" class="item" target="_blank">${i}</a>`);
+                }
+            </script>
+        </div>
+
+        <div class="section-title"><h3>Kolom Sapaan (10 Kata)</h3></div>
+        <div class="grid-container">
+            <a href="#" class="item">Halo</a>
+            <a href="#" class="item">Pagi</a>
+            <a href="#" class="item">Siang</a>
+            <a href="#" class="item">Malam</a>
+            <a href="#" class="item">Maaf</a>
+            <a href="#" class="item">Terima Kasih</a>
+            <a href="#" class="item">Kabar</a>
+            <a href="#" class="item">Sehat</a>
+            <a href="#" class="item">Nama</a>
+            <a href="#" class="item">Sama-sama</a>
+        </div>
+    </div>
+</body>
+</html>
